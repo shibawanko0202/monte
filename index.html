@@ -49,15 +49,27 @@
   </header>
   <nav class="sp-nav">
     <ul>
-      <li>お問い合わせ</li>
-      <li>資料請求</li>
-      <li>求人情報</li>
+      <li>
+        <img src="img/outline_email_white_24dp.png" alt="">
+        <p>お問い合わせ</p>
+      </li>
+      <li>
+        <img src="img/outline_person_pin_white_24dp.png" alt="">
+        <p>求人情報</p>
+      </li>
     </ul>
   </nav>
   <main>
     <img src="img/22678759_m.jpg" alt="アットホームな写真" id="hero">
+    <div class="container">
+      <dt>入居対象者</dt>
+      <dd>要介護１以上の介護認定を受けている方</dd>
+    </div>
     <section class="strength">
       <h2>「もんてくらい」はこんなところ</h2>
+      <p>「もんてくらい」とは〇〇〇という意味のラテン語です。<br>
+          その名の通りアットホームで居心地の良い空間を目指しています。
+      </p>
       <div class="container">
         <img src="img/22558859.png" alt="斜め上を見上げる夫婦" class="illust">
         <ul>
@@ -135,8 +147,8 @@
         </ul>
         <img src="img/22649093.png" alt="車いすに乗る女性と寄り添う女性" class="illust">
       </div>
-      <img src="img/間取り(1階).png" alt="1階の間取り" class="floor">
-      <img src="img/間取り(2階).png" alt="2階の間取り" class="floor">
+      <img src="img/間取り(白地)(1階).png" alt="1階の間取り" class="floor">
+      <img src="img/間取り(白地)(2階).png" alt="2階の間取り" class="floor">
     </section>
     <section class="plan">
       <h2>料金プラン詳細</h2>
@@ -230,6 +242,9 @@
           <td>21,100</td>
         </tr>
       </table>
+      <small>※ 時価変動や社会情勢、法改正など諸般の事情により料金プランは変動することがございます。</small>
+      <p>料金プランは世帯年収によって変わります。自己申告となりますが、地域のセーフティネットとして一人でも多くの方を支援するためにこのようなシステムとなっていることをご理解ください。</p>
+      <p>5分を超える介助･ケアは介助サービスをご利用いただくか、別途有料サービス費が必要となります。介助･サービスの内容によりバックプラン(月額定額制 等)もございますのでご相談ください。</p>
     </section>
     <section class="events">
       <h2>年間行事一覧</h2>
@@ -275,15 +290,25 @@
     </section>
     <section>
       <h2>お問い合せ</h2>
-      <div>電話番号0587-24-9064(要確認)</div>
-      <p>aaaaaa@gmail.com</p>
+      <div class="container">
+        <img src="img/outline_phone_black_24dp.png" alt="電話" width="16px">
+        <a href="tel:0587-24-9064">
+          0587-24-9064
+        </a>
+      </div>
+      <div class="container">
+        <img src="img/outline_email_black_24dp.png" alt="e-mail" width="16px">
+        <a href="mailto:shibawanko0202@gmail.com">
+          shibawanko0202@gmail.com
+        </a>
+      </div>
     </section>
     <!--google mapの表示 -->
     <div id="map"></div>
     <div class="address">住所 愛知県稲沢市大塚北2-99</div>
   </main>
   <footer><small>&copy; 株式会社 三愛ウェルフェア</small></footer>
-
+  <div class="sp-footer"></div>
   <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
   <script async
   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5QOV4QoUQLz6DyJGnRmpyMqokD08ghUc&callback=initMap">

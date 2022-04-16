@@ -2,7 +2,7 @@
 
 :root{
   --monte-maincolor: rgb(209, 232, 202);
-  --monte-subcolor: #f8d2d2;
+  --monte-subcolor: #f8d8d2;
 }
 
 html{
@@ -12,15 +12,18 @@ html{
 body{
   height: 100%;
   background-color: var(--monte-maincolor);
-  font-family: 'Hachi Maru Pop', cursive;
+  font-family: 'Kiwi Maru', serif;
 }
 section{
-  margin: 80px 8px;
+  margin: 0 8px;
   text-align: center;
+}
+section + section{
+  margin: 80px 8px;
 }
 h2{
   font-size: 24px;
-  margin: 36px;
+  margin: 30px;
 }
 li + li{
   margin-top: 16px;
@@ -32,42 +35,41 @@ dt{
   width: 240px;
   object-fit: contain;
 }
+a{
+  transition: color .3s;
+}
+a:hover{
+  color: green;
+}
 
 /* header */
 header{
   position: absolute;
   top: 0;
   width: 100%;
-  height: 100px;
+  /* height: 100px; */
   padding: 0 10px;
   display: flex;
   align-items: center;
 }
 h1{
   /* line-height: 40px; */
-  width: 90px;
-  padding: 4px;
+  width: 100px;
+  padding: 6px;
+  margin: 0 8px;
   border-radius: 4px;
   color: #222;
   background-color: rgba(255,255,255,.8);
   text-align: center;
+  font-family: 'Hachi Maru Pop', cursive;
 }
 #logo{
-  width: 200px;
+  width: 210px;
   margin: 8px;
   /* filter: drop-shadow(0 0 4px black); */
 }
 header nav{
   display: none;
-}
-header nav ul{
-  position: relative;
-  top: -30px;
-  display: flex;
-}
-header nav ul li{
-  margin: 4px;
-  color: #fff;
 }
 
 /* sp-nav */
@@ -75,8 +77,8 @@ header nav ul li{
   position: fixed;
   bottom: 0;
   width: 100%;
-  height: 50px;
-  background-color: #fff;
+  height: 70px;
+  background-color: rgba(255,255,255,.8);
   z-index: 1;
 }
 .sp-nav ul{
@@ -86,11 +88,16 @@ header nav ul li{
   height: 100%;
 }
 .sp-nav ul li{
-  width: 30%;
-  height: 40px;
-  line-height: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 45%;
+  height: 60px;
+  /* line-height: 60px; */
   margin: 0;
-  background-color: var(--monte-subcolor);
+  background-color: #e1a398;
+  color: #fff;
   border-radius: 4px;
   text-align: center;
   cursor: pointer;
@@ -99,15 +106,19 @@ header nav ul li{
 .sp-nav ul li:hover{
   opacity: .6;
 }
+.sp-nav ul li p{
+  font-weight:500;
+}
+.sp-nav ul li img{
+  width: 30px;
+  object-fit: contain
+}
 
 /* main */
-main{
-  /* padding: 0 20px; */
-  font-family: 'Kiwi Maru', serif;
-}
+
 #hero{
   width: 100%;
-  height: 300px;
+  height: 260px;
   object-fit: cover;
   object-position: 100% 20%;
 }
@@ -155,6 +166,14 @@ main{
   background-color: #fff;
   border: 1px solid black;
 }
+.plan small,
+.plan p{
+  text-align: left;
+}
+.plan p{
+  margin: 8px;
+  text-indent: 1em;
+}
 .vertical{
   writing-mode: vertical-rl;
 }
@@ -170,7 +189,7 @@ main{
 }
 #map{
   height: 300px;
-  width: 80%;
+  width: 95%;
   border-radius: 8px;
   margin: 8px auto;
 }
@@ -184,11 +203,44 @@ footer{
   line-height: 50px;
   text-align: center;
 }
+.sp-footer{
+  height: 70px;
+}
 
 /* pc */
 @media(min-width:500px){
+
+  /* common */
+
   .container{
     display: flex;
     justify-content: center;
+  }
+
+  /* header */
+
+  header nav{
+    display: block;
+  }
+  header nav ul{
+    position: relative;
+    top: -30px;
+    display: flex;
+  }
+  header nav ul li{
+    margin: 4px;
+    color: #fff;
+  }
+
+  /* sp-nav */
+
+  .sp-nav{
+    display: none;
+  }
+
+  /* footer */
+
+  .sp-footer{
+    display: none;
   }
 }
