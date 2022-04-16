@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="img/icon_150250_128.png" type="image/x-icon">
+  <title>稲沢市の住宅型有料老人ホーム もんてくらい</title>
+  <meta name="description" content="愛知県稲沢市の住宅型有料老人ホームもんてくらいの公式HP。介護のことならお任せください。">
+  <meta name="keywords" content="愛知,稲沢,介護,老人ホーム">
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Kiwi+Maru:wght@300&display=swap" rel="stylesheet">
+  <!-- google map -->
+  <script>
+  // 地図を初期化して追加します
+  function initMap() {
+    // もんてくらいの位置
+    const monte = { lat: 35.2437985426551, lng: 136.79190963511547 };
+    // もんてくらいを中心とする地図
+    const map = new google.maps.Map(document.getElementById("map"), {
+      zoom: 15,
+      center: monte,
+    });
+    // もんてくらいの位置にあるマーカー
+    const marker = new google.maps.Marker({
+      position: monte,
+      map: map,
+    });
+  }
+  </script>
+</head>
+<body>
+  <header>
+    <div>
+      <img src="img/もんてくらいロゴ(暫定).png" alt="もんてくらい" id="logo">
+      <h1>住宅型有料<br>老人ホーム</h1>
+    </div>
+    <nav>
+      <ul>
+        <li>お問い合わせ</li>
+        <li>資料請求</li>
+        <li>求人情報</li>
+      </ul>
+    </nav>
+  </header>
+  <nav class="sp-nav">
+    <ul>
+      <li>お問い合わせ</li>
+      <li>資料請求</li>
+      <li>求人情報</li>
+    </ul>
+  </nav>
+  <main>
+    <img src="img/22678759_m.jpg" alt="アットホームな写真" id="hero">
+    <section class="strength">
+      <h2>「もんてくらい」はこんなところ</h2>
+      <div class="container">
+        <img src="img/22558859.png" alt="斜め上を見上げる夫婦" class="illust">
+        <ul>
+          <li>
+            <dt>入居一時金￥０</dt>
+            <dd>入居時に費用は一切必要ありません</dd>
+          </li>
+          <li>
+            <dt>24時間職員常駐</dt>
+            <dd>職員が常に待機しています</dd>
+          </li>
+          <li>
+            <dt>全個室16室8.8畳</dt>
+            <dd>すべての個室に窓があり開放的に生活いただけます</dd>
+          </li>
+          <li>
+            <dt>認知症対応可</dt>
+            <dd>認知症の方も安心して入居ください</dd>
+          </li>
+          <li>
+            <dt>生活保護入居可</dt>
+            <dd>生活保護を受給中の方もご利用いただけます</dd>
+          </li>
+          <li>
+            <dt>夫婦入居可</dt>
+            <dd>ご夫婦でご一緒に入居いただけます</dd>
+          </li>
+          <li>
+            <dt>全室トイレ洗面有</dt>
+            <dd>全室にトイレと洗面施設を用意しており便利です</dd>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="nursing">
+      <h2>看護サービス</h2>
+      <div class="container">
+        <ul>
+          <li>点滴(水分･電解質補給 等)</li>
+          <li>注射(インシュリン 等)</li>
+          <li>座薬</li>
+          <li>疼痛コントロール</li>
+        </ul>
+        <img src="img/22651923.png" alt="点滴を受ける男性" class="illust">
+      </div>
+    </section>
+    <section class="outline">
+      <h2>施設概要</h2>
+      <div class="container">
+        <ul>
+          <li>
+            <dt>契約形態</dt>
+            <dd>利用権形式</dd>
+          </li>
+          <li>
+            <dt>居室数</dt>
+            <dd>16室</dd>
+          </li>
+          <li>
+            <dt>居室面積</dt>
+            <dd>14.47~14.69m&sup2;</dd>
+          </li>
+          <li>
+            <dt>居室設備</dt>
+            <dd>冷暖房完備･トイレ･洗面･ナースコール･<br>介護ベット･防火カーテン</dd>
+          </li>
+          <li>
+            <dt>共同設備</dt>
+            <dd>食堂･トイレ･浴室(機械浴･個浴)･<br>機能訓練室･カラオケ</dd>
+          </li>
+          <li>
+            <dt>建物構造</dt>
+            <dd>準耐火木造2階建･スプリンクラー･緊急通報装置</dd>
+          </li>
+        </ul>
+        <img src="img/22649093.png" alt="車いすに乗る女性と寄り添う女性" class="illust">
+      </div>
+      <img src="img/間取り(1階).png" alt="1階の間取り" class="floor">
+      <img src="img/間取り(2階).png" alt="2階の間取り" class="floor">
+    </section>
+    <section class="plan">
+      <h2>料金プラン詳細</h2>
+      <table>
+        <tr>
+          <th rowspan="2" colspan="3">プラン名</th>
+          <th rowspan="2">月額合計</th>
+          <th colspan="5">内訳</th>
+        </tr>
+        <tr>
+          <th>家賃</th>
+          <th>生活<br>サービス費</th>
+          <th>食費</th>
+          <th>光熱水費</th>
+          <th>管理費</th>
+        </tr>
+        <tr>
+          <th rowspan="4">Aプラン<br>1階<br>トイレ扉<br>カーテン式</th>
+          <th rowspan="4" class="vertical">世帯年収</th>
+          <th>200万未満</th>
+          <td>105,900</td>
+          <td>35,800</td>
+          <td>20,500</td>
+          <td>33,500</td>
+          <td>10,000</td>
+          <td>6,100</td>
+        </tr>
+        <tr>
+          <th>200万~399万</th>
+          <td>135,900</td>
+          <td>45,800</td>
+          <td>30,500</td>
+          <td>33,500</td>
+          <td>15,000</td>
+          <td>11,100</td>
+        </tr>
+        <tr>
+          <th>400万~599万</th>
+          <td>170,400</td>
+          <td>55,800</td>
+          <td>40,500</td>
+          <td>38,000</td>
+          <td>20,000</td>
+          <td>16,100</td>
+        </tr>
+        <tr>
+          <th>600万以上</th>
+          <td>204,900</td>
+          <td>65,800</td>
+          <td>50,500</td>
+          <td>42,500</td>
+          <td>25,000</td>
+          <td>21,100</td>
+        </tr>
+        <tr>
+          <th rowspan="4">Bプラン<br>2階<br>トイレ扉<br>建具式</th>
+          <th rowspan="4" class="vertical">世帯年収</th>
+          <th>200万未満</th>
+          <td>110,900</td>
+          <td>40,800</td>
+          <td>20,500</td>
+          <td>33,500</td>
+          <td>10,000</td>
+          <td>6,100</td>
+        </tr>
+        <tr>
+          <th>200万~399万</th>
+          <td>140,900</td>
+          <td>50,800</td>
+          <td>30,500</td>
+          <td>33,500</td>
+          <td>15,000</td>
+          <td>11,100</td>
+        </tr>
+        <tr>
+          <th>400万~599万</th>
+          <td>175,400</td>
+          <td>60,800</td>
+          <td>40,500</td>
+          <td>38,000</td>
+          <td>20,000</td>
+          <td>16,100</td>
+        </tr>
+        <tr>
+          <th>600万以上</th>
+          <td>209,900</td>
+          <td>70,800</td>
+          <td>50,500</td>
+          <td>42,500</td>
+          <td>25,000</td>
+          <td>21,100</td>
+        </tr>
+      </table>
+    </section>
+    <section class="events">
+      <h2>年間行事一覧</h2>
+      <div class="container">
+        <div>
+          <img src="img/22519130.png" alt="" class="illust">
+          <img src="img/22301884.png" alt="" class="illust">
+        </div>
+        <dl>
+          <dt>2月</dt>
+          <dd>節分(外出)</dd>
+          <dt>4月</dt>
+          <dd>お花見(外出)</dd>
+          <dt>6月</dt>
+          <dd>あじさい祭り(外出)</dd>
+          <dt>9月</dt>
+          <dd>敬老会</dd>
+          <dt>11月</dt>
+          <dd>ハロウィンパーティー</dd>
+          <dt>12月</dt>
+          <dd>クリスマス会</dd>
+        </dl>
+        <div>
+          <img src="img/22640505.png" alt="" class="illust">
+          <img src="img/576602.png" alt="" class="illust">
+        </div>
+        <!-- <img src="img/22663721.png" alt="初老の男性と寄り添う女性" class="illust"> -->
+      </div>
+    </section>
+    <section class="alliance">
+      <h2>提携医療機関</h2>
+      <div class="container">
+        <img src="img/22462979.png" alt="" class="illust">
+        <dl>
+          <dt>オリーブ内科</dt>
+          <dt><a href="http://olive-clinic.com/">http://olive-clinic.com/</a></dt>
+          <dd>受診/往診/緊急時対応/健康相談/健康診断</dd>
+          <dt>グランツ歯科室</dt>
+          <dt><a href="https://www.d-glanz.com/">https://www.d-glanz.com/</a></dt>
+          <dd>受診/往診/健康診断</dd>
+        </dl>
+      </div>
+    </section>
+    <section>
+      <h2>お問い合せ</h2>
+      <div>電話番号0587-24-9064(要確認)</div>
+      <p>aaaaaa@gmail.com</p>
+    </section>
+    <!--google mapの表示 -->
+    <div id="map"></div>
+    <div class="address">住所 愛知県稲沢市大塚北2-99</div>
+  </main>
+  <footer><small>&copy; 株式会社 三愛ウェルフェア</small></footer>
+
+  <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+  <script async
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5QOV4QoUQLz6DyJGnRmpyMqokD08ghUc&callback=initMap">
+ </script>
+</body>
+</html>

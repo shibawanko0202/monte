@@ -1,0 +1,194 @@
+/* common */
+
+:root{
+  --monte-maincolor: rgb(209, 232, 202);
+  --monte-subcolor: #f8d2d2;
+}
+
+html{
+  height: 100%;
+  scroll-behavior: smooth;
+}
+body{
+  height: 100%;
+  background-color: var(--monte-maincolor);
+  font-family: 'Hachi Maru Pop', cursive;
+}
+section{
+  margin: 80px 8px;
+  text-align: center;
+}
+h2{
+  font-size: 24px;
+  margin: 36px;
+}
+li + li{
+  margin-top: 16px;
+}
+dt{
+  margin-bottom: 4px;
+}
+.illust{
+  width: 240px;
+  object-fit: contain;
+}
+
+/* header */
+header{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+}
+h1{
+  /* line-height: 40px; */
+  width: 90px;
+  padding: 4px;
+  border-radius: 4px;
+  color: #222;
+  background-color: rgba(255,255,255,.8);
+  text-align: center;
+}
+#logo{
+  width: 200px;
+  margin: 8px;
+  /* filter: drop-shadow(0 0 4px black); */
+}
+header nav{
+  display: none;
+}
+header nav ul{
+  position: relative;
+  top: -30px;
+  display: flex;
+}
+header nav ul li{
+  margin: 4px;
+  color: #fff;
+}
+
+/* sp-nav */
+.sp-nav{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #fff;
+  z-index: 1;
+}
+.sp-nav ul{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+.sp-nav ul li{
+  width: 30%;
+  height: 40px;
+  line-height: 40px;
+  margin: 0;
+  background-color: var(--monte-subcolor);
+  border-radius: 4px;
+  text-align: center;
+  cursor: pointer;
+  transition: opacity .3s;
+}
+.sp-nav ul li:hover{
+  opacity: .6;
+}
+
+/* main */
+main{
+  /* padding: 0 20px; */
+  font-family: 'Kiwi Maru', serif;
+}
+#hero{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: 100% 20%;
+}
+.strength ul li{
+  color: black;
+  border-left: solid 8px var(--monte-subcolor);/*左側の線*/
+  background: whitesmoke;/*背景色*/
+  margin-bottom: 5px;/*下のバーとの余白*/
+  line-height: 1.5;
+  border-radius: 0 15px 15px 0;/*右側の角だけ丸く*/
+  padding: 0.5em;
+  text-align: left;
+}
+.nursing ul li,
+.outline ul li{
+  color: black;
+  border-right: solid 8px var(--monte-subcolor);/*左側の線*/
+  background: whitesmoke;/*背景色*/
+  margin-bottom: 5px;/*下のバーとの余白*/
+  line-height: 1.5;
+  border-radius: 15px 0 0 15px;/*右側の角だけ丸く*/
+  padding: 0.5em;
+  text-align: right;
+}
+.outline .floor{
+  margin-top: 24px;
+  width: 300px;
+}
+.plan table{
+  margin: auto;
+}
+.plan table th,
+.plan table td{
+  text-align: center;
+  vertical-align: middle;
+  padding: 4px 2px;
+  line-break: normal;
+  font-size: 10px;
+}
+.plan table th{
+  background-color: var(--monte-subcolor);
+  border: 1px solid black;
+}
+.plan table td{
+  background-color: #fff;
+  border: 1px solid black;
+}
+.vertical{
+  writing-mode: vertical-rl;
+}
+.events dd + dt{
+  margin-top: 12px;
+}
+.alliance dt + dt{
+  text-decoration: underline;
+  margin-bottom: 8px;
+}
+.alliance dd + dt{
+  margin-top: 16px;
+}
+#map{
+  height: 300px;
+  width: 80%;
+  border-radius: 8px;
+  margin: 8px auto;
+}
+.address{
+  text-align: center;
+}
+
+/* footer */
+footer{
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+
+/* pc */
+@media(min-width:500px){
+  .container{
+    display: flex;
+    justify-content: center;
+  }
+}
