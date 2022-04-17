@@ -43,6 +43,7 @@ a:hover{
 }
 p{
   margin: 8px;
+  text-align: left;
 }
 
 /* header */
@@ -97,7 +98,6 @@ header nav{
   align-items: center;
   width: 45%;
   height: 60px;
-  /* line-height: 60px; */
   margin: 0;
   background-color: #e1a398;
   color: #fff;
@@ -128,29 +128,33 @@ header nav{
 }
 .strength ul li{
   color: black;
-  border-left: solid 8px var(--monte-subcolor);/*左側の線*/
-  background: whitesmoke;/*背景色*/
-  margin-bottom: 5px;/*下のバーとの余白*/
+  border-left: solid 8px var(--monte-subcolor);
+  background: whitesmoke;
+  margin-bottom: 5px;
   line-height: 1.5;
-  border-radius: 0 15px 15px 0;/*右側の角だけ丸く*/
+  border-radius: 0 15px 15px 0;
   padding: 0.5em;
   text-align: left;
 }
 .strength .outline_img{
-  width: 200px;
+  width: 260px;
   object-fit: contain;
   margin: 8px;
 }
 .nursing ul li,
 .outline ul li{
   color: black;
-  border-right: solid 8px var(--monte-subcolor);/*左側の線*/
-  background: whitesmoke;/*背景色*/
-  margin-bottom: 5px;/*下のバーとの余白*/
+  border-right: solid 8px var(--monte-subcolor);
+  background: whitesmoke;
+  margin-bottom: 5px;
   line-height: 1.5;
-  border-radius: 15px 0 0 15px;/*右側の角だけ丸く*/
+  border-radius: 15px 0 0 15px;
   padding: 0.5em;
   text-align: right;
+}
+.nursing ul li{
+  width: 240px;
+  margin: 8px auto;
 }
 .outline .floor{
   margin-top: 24px;
@@ -214,6 +218,9 @@ header nav{
 .events span{
   font-size: 70px;
   font-weight: normal;
+}
+.events p{
+  text-align: center;
 }
 .event{
   height: 100px;
