@@ -189,6 +189,8 @@ header nav{
 }
 .vertical{
   writing-mode: vertical-rl;
+  min-height: 40px;
+  min-width: 12px;
 }
 .events ul li{
   display: flex;
