@@ -32,7 +32,7 @@ dt{
   margin-bottom: 4px;
 }
 .illust{
-  width: 240px;
+  width: 200px;
   object-fit: contain;
 }
 a{
@@ -40,6 +40,9 @@ a{
 }
 a:hover{
   color: green;
+}
+p{
+  margin: 8px;
 }
 
 /* header */
@@ -108,6 +111,7 @@ header nav{
 }
 .sp-nav ul li p{
   font-weight:500;
+  margin: 0;
 }
 .sp-nav ul li img{
   width: 30px;
@@ -131,6 +135,11 @@ header nav{
   border-radius: 0 15px 15px 0;/*右側の角だけ丸く*/
   padding: 0.5em;
   text-align: left;
+}
+.strength .outline_img{
+  width: 200px;
+  object-fit: contain;
+  margin: 8px;
 }
 .nursing ul li,
 .outline ul li{
@@ -170,15 +179,45 @@ header nav{
 .plan p{
   text-align: left;
 }
-.plan p{
-  margin: 8px;
-  text-indent: 1em;
+.plan p::before{
+  content: "●";
 }
 .vertical{
   writing-mode: vertical-rl;
 }
-.events dd + dt{
-  margin-top: 12px;
+.events ul li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.events ul li:nth-child(1){
+  color: rgb(225, 163, 7);
+}
+.events ul li:nth-child(2){
+  color: rgb(254, 149, 205);
+}
+.events ul li:nth-child(3){
+  color: rgb(94, 182, 240);
+}
+.events ul li:nth-child(4){
+  color: rgb(241, 87, 210);
+}
+.events ul li:nth-child(5){
+  color: rgb(253, 153, 31);
+}
+.events ul li:nth-child(6){
+  color: rgb(41, 118, 41);
+}
+.events dt{
+  font-family: 'Leckerli One', cursive;
+}
+.events span{
+  font-size: 70px;
+  font-weight: normal;
+}
+.event{
+  height: 100px;
+  object-fit: contain;
 }
 .alliance dt + dt{
   text-decoration: underline;
