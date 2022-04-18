@@ -4,6 +4,7 @@
   --monte-maincolor: rgb(209, 232, 202);
   --monte-subcolor: #f8d8d2;
   --monte-pointcolor: #e1a398;
+  --monte-revaersecolor: rgb(107, 171, 65);
 }
 
 html{
@@ -54,19 +55,24 @@ p{
   position: fixed;
   bottom: 85px;
   right: 10px;
-  width: 40px;
-  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
   background-color: var(--monte-pointcolor);
-  text-align: center;
   border-radius: 4px;
-  z-index: 1;
+  z-index: 2;
   opacity: 0;
   pointer-events: none;
   transition: all .3s;
 }
 #to_top.show{
-  opacity: 1;
+  opacity: .7;
   pointer-events: all;
+}
+#to_top:hover{
+  opacity: 1;
 }
 #to_top img{
   width: 40px;
@@ -110,7 +116,7 @@ header nav{
   width: 100%;
   height: 70px;
   background-color: rgba(255,255,255,.8);
-  z-index: 1;
+  z-index: 2;
 }
 .sp-nav ul{
   display: flex;
@@ -131,10 +137,10 @@ header nav{
   border-radius: 4px;
   text-align: center;
   cursor: pointer;
-  transition: opacity .3s;
+  transition: all .3s;
 }
 .sp-nav ul li:hover{
-  opacity: .6;
+  background-color: var(--monte-revaersecolor);
 }
 .sp-nav ul li p{
   font-weight:500;
@@ -142,6 +148,7 @@ header nav{
 }
 .sp-nav ul li img{
   width: 30px;
+  margin: 2px 4px;
   object-fit: contain
 }
 
@@ -278,6 +285,29 @@ header nav{
 }
 .alliance dd + dt{
   margin-top: 24px;
+}
+#contact a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 320px;
+  background-color: var(--monte-revaersecolor);
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, .6);
+  margin: 12px auto;
+  padding: 4px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #fff;
+  transition: all .3s;
+}
+#contact a:hover{
+  background-color: var(--monte-pointcolor);
+}
+#contact a img{
+  width: 40px;
+  object-fit: contain;
+  margin: 4px;
 }
 #map{
   height: 300px;
