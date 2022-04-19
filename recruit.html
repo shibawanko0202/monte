@@ -4,13 +4,180 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="img/icon_150250_128.png" type="image/x-icon">
   <title>採用情報 | 稲沢市の住宅型有料老人ホーム もんてくらい</title>
+  <meta name="description" content="愛知県稲沢市の住宅型有料老人ホームもんてくらいの採用情報ページ。介護のことならお任せください。">
+  <meta name="keywords" content="愛知,稲沢,介護,老人ホーム">
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Kiwi+Maru:wght@300&family=Leckerli+One&display=swap" rel="stylesheet">
+  <!-- google map -->
+  <script>
+  // 地図を初期化して追加します
+  function initMap() {
+    // もんてくらいの位置
+    const monte = { lat: 35.2437985426551, lng: 136.79190963511547 };
+    // もんてくらいを中心とする地図
+    const map = new google.maps.Map(document.getElementById("map"), {
+      zoom: 15,
+      center: monte,
+    });
+    // もんてくらいの位置にあるマーカー
+    const marker = new google.maps.Marker({
+      position: monte,
+      map: map,
+    });
+  }
+  </script>
 </head>
 <body>
-  <header>
-    <h1>採用情報</h1>
+  <header id="header">
+    <div>
+      <img src="img/もんてくらいロゴ(暫定).png" alt="もんてくらい" class="logo">
+      <div class="bord">
+        <img src="img/448364.png" alt="" class="bord">
+        <h1 class="recruit_h1">採用情報</h1>
+      </div>
+    </div>
+    <nav>
+      <ul>
+        <li>お問い合わせ</li>
+        <li>採用情報</li>
+      </ul>
+    </nav>
   </header>
-  <main></main>
-  <footer></footer>
+  <div id="to_top">
+    <a href="#">
+      <img src="img/outline_arrow_upward_white_24dp.png" alt="サイトトップへ移動">
+    </a>
+  </div>
+  <nav class="sp-nav">
+    <ul>
+      <li>
+        <a href="#contact">
+          <img src="img/icon_117062_256.png" alt="">
+          <img src="img/outline_email_white_24dp.png" alt="">
+          <p>お問い合わせ</p>
+        </a>
+      </li>
+      <li>
+        <a href="index.html">
+          <img src="img/icon_120052_256.png" alt="">
+          <p>トップページ</p>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <main>
+    <img src="img/22678767_a.jpg" alt="アットホームな写真" class="recruit_hero">
+    <section class="strength">
+      <h2>「もんてくらい」で<br>一緒に働こう</h2>
+      <p>住宅型有料老人ホーム「もんてくらい」では、現在一緒に働いていただける社員を募集しています。</p>
+      <div class="container">
+        <img src="img/22665503.png" alt="杖を持つ女性と寄り添う介護士" class="illust">
+        <ul>
+          <li>
+            <dt>雇用形態</dt>
+            <dd>正社員(日勤･夜勤含む常勤)</dd>
+          </li>
+          <li>
+            <dt>仕事内容</dt>
+            <dd>介護付有料老人ホームの看護業務全般</dd>
+            <dd>(吸引、投薬管理、経管栄養、バイタルチェック、生活介助 等)</dd>
+          </li>
+          <li>
+            <dt>応募資格</dt>
+            <dd>正看護師、准看護師</dd>
+          </li>
+          <li>
+            <dt>給与</dt>
+            <dd>緊急時にすぐに対応出来るよう、職員が常駐しています。</dd>
+          </li>
+          <li>
+            <dt>全個室16室8.8畳</dt>
+            <dd>すべての個室に窓があり、開放的に生活いただけます。</dd>
+          </li>
+          <li>
+            <dt>認知症対応可</dt>
+            <dd>認知症の方も安心してご利用いただけます。</dd>
+          </li>
+          <li>
+            <dt>生活保護入居可</dt>
+            <dd>生活保護を受給中の方もご入居できます。</dd>
+          </li>
+          <li>
+            <dt>夫婦入居可</dt>
+            <dd>ご夫婦で一緒に入居いただけます。ご気軽に相談ください。</dd>
+          </li>
+          <li>
+            <dt>全室トイレ洗面有</dt>
+            <dd>全ての個室にトイレと洗面台を用意しています。</dd>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="nursing">
+      <h2>看護サービス</h2>
+      <div class="container">
+        <ul>
+          <li>点滴(水分･電解質補給 等)</li>
+          <li>注射(インシュリン 等)</li>
+          <li>座薬</li>
+          <li>疼痛コントロール</li>
+        </ul>
+        <img src="img/22651923.png" alt="点滴を受ける男性" class="illust">
+      </div>
+    </section>
+    <section class="alliance">
+      <h2>提携医療機関</h2>
+      <div class="container">
+        <img src="img/22462979.png" alt="" class="illust">
+        <dl>
+          <dt>オリーブ内科</dt>
+          <dt><a href="http://olive-clinic.com/">http://olive-clinic.com/</a></dt>
+          <dd>受診/往診/緊急時対応/健康相談/健康診断</dd>
+          <dt>グランツ歯科室</dt>
+          <dt><a href="https://www.d-glanz.com/">https://www.d-glanz.com/</a></dt>
+          <dd>受診/往診/健康診断</dd>
+        </dl>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <h2>お問い合せ</h2>
+      <p>入居にかかわらず、介護保険や認定のこと、在宅介護のことなどお気軽にお問合せください。</p>
+      <a href="tel:0587-24-9064">
+        <img src="img/icon_117062_256.png" alt="電話">
+        <dl>
+          <dt>電話相談はこちら</dt>
+          <dd>0587-24-9064</dd>
+        </dl>
+      </a>
+      <a href="mailto:shibawanko0202@gmail.com">
+        <img src="img/outline_email_white_24dp.png" alt="e-mail">
+        <dl>
+          <dt>メール相談はこちら</dt>
+          <dd>shibawanko0202@gmail.com(仮)</dd>
+        </dl>
+      </a>
+    </section>
+    <section class="access">
+      <h2>アクセス</h2>
+      <!--google mapの表示 -->
+      <div id="map"></div>
+      <address>〒492-8215 愛知県稲沢市大塚北 2-99</address>
+      <dt>公共交通機関でお越しの方</dt>
+      <dd>名鉄「国府宮」駅より稲沢コミュニティバス「城見ヶ丘」徒歩5分</dd>
+    </section>
+  </main>
+  <footer><small>&copy; 株式会社 三愛ウェルフェア</small></footer>
+  <div class="sp-footer"></div>
+  <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+  <script async
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5QOV4QoUQLz6DyJGnRmpyMqokD08ghUc&callback=initMap">
+ </script>
+ <script src="js/main.js"></script>
 </body>
 </html>
