@@ -124,7 +124,7 @@ h1{
 .logo{
   width: 210px;
   margin: 12px 8px 0 8px;
-  /* filter: drop-shadow(0 0 4px black); */
+  filter: drop-shadow(0 0 4px rgba(0,0,0,.5));
 }
 header nav{
   display: none;
