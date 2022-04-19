@@ -115,7 +115,7 @@ h1{
 }
 #logo{
   width: 210px;
-  margin: 8px;
+  margin: 12px 8px 0 8px;
   /* filter: drop-shadow(0 0 4px black); */
 }
 header nav{
