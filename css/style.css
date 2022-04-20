@@ -271,6 +271,9 @@ header nav{
   padding: 0 0 16px 16px;
   margin: 16px auto;
 }
+.employee{
+  margin: 0 8px 80px;
+}
 .entry dl{
   border: dashed 2px var(--monte-pointcolor);
   background: rgba(255,255,255,.5);
