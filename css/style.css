@@ -62,7 +62,8 @@ dd + dd{
   object-fit: contain;
 }
 p{
-  margin: 8px;
+  max-width: 500px;
+  margin: 8px auto;
   text-align: left;
 }
 #to_top{
@@ -200,8 +201,9 @@ header nav{
   border-left: solid 8px var(--monte-subcolor);
   background: whitesmoke;
   border-radius: 0 15px 15px 0;
+  max-width: 500px;
   padding: 0.5em;
-  margin: 8px;
+  margin: 8px auto;
   text-align: left;
 }
 .employee > dl > dd > dl{
@@ -218,7 +220,8 @@ header nav{
   letter-spacing: .05em;
 }
 .strength .outline_img{
-  width: 260px;
+  width: 80%;
+  max-width: 450px;
   object-fit: contain;
   margin: 8px;
 }
@@ -227,8 +230,9 @@ header nav{
   border-right: solid 8px var(--monte-subcolor);
   background: whitesmoke;
   border-radius: 15px 0 0 15px;
+  max-width: 500px;
   padding: 0.5em;
-  margin: 8px;
+  margin: 8px auto;
   text-align: right;
 }
 .nursing ul li{
@@ -269,20 +273,9 @@ header nav{
   border: dashed 2px var(--monte-pointcolor);
   background: rgba(255,255,255,.5);
   border-radius: 8px;
+  max-width: 400px;
   padding: 0 0 16px 16px;
   margin: 16px auto;
-}
-.employee{
-  margin: 0 8px 80px;
-}
-.entry dl{
-  border: dotted 2px var(--monte-pointcolor);
-  background: rgba(255,255,255,.5);
-  border-radius: 8px;
-  padding: 16px;
-}
-.entry dl dt::before{
-  content: "■";
 }
 .plan_other h3{
   font-size: 16px;
@@ -295,6 +288,23 @@ header nav{
 }
 .plan_other li::before{
   content: "･";
+}
+.employee{
+  margin: 0 8px 80px;
+}
+.entry p{
+  text-align: center;
+}
+.entry dl{
+  border: dotted 2px var(--monte-pointcolor);
+  background: rgba(255,255,255,.5);
+  border-radius: 8px;
+  max-width: 400px;
+  padding: 16px;
+  margin: 0 auto;
+}
+.entry dl dt::before{
+  content: "■";
 }
 .vertical{
   writing-mode: vertical-rl;
@@ -373,7 +383,8 @@ header nav{
 }
 .access dt,
 .access dd{
-  text-align: left;
+  text-align: center;
+  /* margin: 8px auto; */
 }
 .access dt::before{
   content: "■";
@@ -381,6 +392,7 @@ header nav{
 #map{
   height: 300px;
   width: 95%;
+  max-width: 500px;
   border-radius: 8px;
   margin: 8px auto;
 }
@@ -392,7 +404,7 @@ footer{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 80px;
+  height: 100px;
   text-align: center;
   color: #fff;
   background-color: var(--monte-footercolor);
@@ -437,6 +449,7 @@ footer ul li::before{
   .container{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
   }
 
   /* header */
@@ -452,6 +465,13 @@ footer ul li::before{
   header nav ul li{
     margin: 4px;
     color: #fff;
+  }
+
+  /* main */
+
+  .plan table th,
+  .plan table td{
+    font-size: 13px;
   }
 
   /* sp-nav */
