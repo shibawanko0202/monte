@@ -19,7 +19,7 @@ body{
   color: rgb(72, 48, 48);
 }
 section{
-  margin: 0 8px;
+  margin: 0 10px;
   text-align: center;
 }
 section + section{
@@ -220,7 +220,7 @@ header nav{
   letter-spacing: .05em;
 }
 .strength .outline_img{
-  width: 80%;
+  width: 90%;
   max-width: 450px;
   object-fit: contain;
   margin: 8px;
@@ -450,6 +450,9 @@ footer ul li::before{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+  }
+  #to_top{
+    bottom: 15px;
   }
 
   /* header */
