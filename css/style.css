@@ -112,7 +112,7 @@ header{
   filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.3));
 }
 div.bord{
-  margin-left: 12px;
+  margin: 12px;
 }
 h1{
   position: absolute;
