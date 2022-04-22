@@ -62,7 +62,7 @@ dd + dd{
   object-fit: contain;
 }
 p{
-  max-width: 500px;
+  max-width: 520px;
   margin: 8px auto;
   text-align: left;
 }
@@ -103,7 +103,7 @@ header{
   width: 100%;
   padding: 0 10px;
   display: flex;
-  align-items: center;
+  /* align-items: center; */
 }
 .bord{
   position: relative;
@@ -160,7 +160,7 @@ header nav{
   width: 45%;
   height: 60px;
   margin: 0;
-  background-color: #e1a398;
+  background-color: var(--monte-pointcolor);
   color: #fff;
   border-radius: 4px;
   text-align: center;
@@ -203,6 +203,7 @@ header nav{
   padding: 0.5em;
   margin: 8px auto;
   text-align: left;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.3);
 }
 .employee > dl > dd > dl{
   margin: 8px 0;
@@ -233,6 +234,7 @@ header nav{
   padding: 0.5em;
   margin: 8px auto;
   text-align: right;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.3);
 }
 .nursing ul li{
   width: 230px;
@@ -242,6 +244,7 @@ header nav{
 .outline .floor{
   margin-top: 24px;
   width: 300px;
+  filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.3));
 }
 .plan table{
   margin: auto;
@@ -463,13 +466,24 @@ footer ul li::before{
     display: block;
   }
   header nav ul{
-    position: relative;
-    top: -30px;
+    /* position: relative;
+    top: -30px; */
     display: flex;
   }
   header nav ul li{
-    margin: 4px;
-    color: #fff;
+    border-left: solid 8px var(--monte-subcolor);
+    background: whitesmoke;
+    border-radius: 0 5px 5px 0;
+    max-width: 460px;
+    padding: 0.5em;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+    margin: 20px 8px 0;
+    text-align: left;
+    cursor: pointer;
+    transition: all .3s;
+  }
+  header nav ul li:hover{
+    border-left: solid 8px var(--monte-revaersecolor);
   }
 
   /* main */
