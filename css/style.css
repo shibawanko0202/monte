@@ -6,6 +6,7 @@
   --monte-pointcolor: #e1a398;
   --monte-revaersecolor: rgb(107, 171, 65);
   --monte-footercolor: rgb(177, 209, 161);
+  --side_width: 200px;
 }
 
 html{
@@ -13,11 +14,38 @@ html{
   scroll-behavior: smooth;
 }
 body{
+  position: relative;
+  display: flex;
+
   height: 100%;
   background-color: var(--monte-maincolor);
   font-family: 'Kiwi Maru', serif;
   color: rgb(72, 48, 48);
 }
+.main_area{
+  width: calc(100% - var(--side_width));
+  position: absolute;
+  left: var(--side_width);
+}
+.side_nav{
+  position: fixed;
+  left: 0;
+  height: 100%;
+  width: var(--side_width);
+  padding: 8px;
+  background-color: pink;
+  z-index: 1;
+}
+.side_nav h1{
+  text-align: center;
+}
+.side_logo{
+  width: 120px;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+
 section{
   margin: 0 10px;
   text-align: center;
@@ -27,7 +55,7 @@ section + section{
 }
 section a{
   text-decoration: underline;
-  transition: color .3s;
+  transition: color .5s;
 }
 section a:hover{
   color: var(--monte-revaersecolor);
@@ -81,7 +109,7 @@ p{
   z-index: 2;
   opacity: 0;
   pointer-events: none;
-  transition: all .3s;
+  transition: all .5s;
 }
 #to_top.show{
   opacity: .7;
@@ -114,7 +142,7 @@ header{
 div.bord{
   margin: 12px;
 }
-h1{
+header h1{
   position: absolute;
   top: 32px;
   left: 15px;
@@ -129,6 +157,7 @@ h1{
 }
 .logo{
   width: 210px;
+  object-fit: contain;
   margin: 12px 8px 0 8px;
   filter: drop-shadow(0 0 4px rgba(0,0,0,.5));
 }
@@ -165,7 +194,7 @@ header nav{
   border-radius: 4px;
   text-align: center;
   cursor: pointer;
-  transition: all .3s;
+  transition: all .5s;
 }
 .sp-nav ul li:hover{
   background-color: var(--monte-revaersecolor);
@@ -198,7 +227,7 @@ header nav{
 .employee > dl{
   border-left: solid 8px var(--monte-subcolor);
   background: whitesmoke;
-  border-radius: 0 15px 15px 0;
+  border-radius: 0 12px 12px 0;
   max-width: 460px;
   padding: 0.5em;
   margin: 8px auto;
@@ -229,7 +258,7 @@ header nav{
 .outline dl{
   border-right: solid 8px var(--monte-subcolor);
   background: whitesmoke;
-  border-radius: 15px 0 0 15px;
+  border-radius: 12px 0 0 12px;
   max-width: 420px;
   padding: 0.5em;
   margin: 8px auto;
@@ -238,7 +267,7 @@ header nav{
 }
 .nursing ul li{
   width: 230px;
-  border-radius: 10px 0 0 10px;
+  border-radius: 7px 0 0 7px;
   margin: 8px auto;
 }
 .outline .floor{
@@ -370,7 +399,7 @@ header nav{
   border-radius: 8px;
   text-decoration: none;
   color: #fff;
-  transition: all .3s;
+  transition: all .5s;
 }
 .contact a:hover{
   background-color: var(--monte-pointcolor);
@@ -444,7 +473,7 @@ footer ul li::before{
 
 /* pc */
 
-@media(min-width:500px){
+@media(min-width:520px){
 
   /* common */
 
@@ -480,7 +509,7 @@ footer ul li::before{
     margin: 20px 8px 0;
     text-align: left;
     cursor: pointer;
-    transition: all .3s;
+    transition: all .5s;
   }
   header nav ul li:hover{
     border-left: solid 8px var(--monte-revaersecolor);
@@ -503,5 +532,16 @@ footer ul li::before{
 
   .sp-footer{
     display: none;
+  }
+}
+
+@media(min-width: 800px){
+
+  /* header */
+
+  header > div{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: start;
   }
 }
