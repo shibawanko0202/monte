@@ -453,7 +453,7 @@ footer ul li::before{
   height: 70px;
 }
 
-/* pc */
+/* pc/tablet */
 
 @media(min-width:520px){
 
@@ -590,6 +590,6 @@ footer ul li::before{
 
   .hero,
   .recruit_hero{
-    height: 260px;
+    height: 300px;
   }
 }
