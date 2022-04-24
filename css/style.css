@@ -392,6 +392,10 @@ header nav{
   object-fit: contain;
   margin: 4px;
 }
+.formrun-embed{
+  background-color: var(--monte-maincolor);
+  border-radius: 8px;
+}
 .access address{
   margin: 8px;
 }
