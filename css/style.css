@@ -368,6 +368,9 @@ header nav{
 .alliance dd + dt{
   margin-top: 24px;
 }
+.contact > p{
+  margin: 16px;
+}
 .contact a{
   display: flex;
   justify-content: center;
@@ -392,9 +395,8 @@ header nav{
   object-fit: contain;
   margin: 4px;
 }
-.formrun-embed{
-  background-color: var(--monte-maincolor);
-  border-radius: 8px;
+.contact dt{
+  font-weight: normal;
 }
 .access address{
   margin: 8px;
