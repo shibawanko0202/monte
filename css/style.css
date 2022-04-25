@@ -6,7 +6,7 @@
   --monte-pointcolor: #e1a398;
   --monte-revaersecolor: rgb(107, 171, 65);
   --monte-footercolor: rgb(183, 210, 170);
-  --monte-sidecolor: rgb(162, 156, 146);
+  --monte-sidecolor: rgb(161, 149, 133);
   --side_width: 280px;
 }
 
@@ -561,6 +561,8 @@ footer ul li::before{
     width: var(--side_width);
     padding: 8px;
     background-color: var(--monte-sidecolor);
+    border-radius: 0 0 40px 0;
+    box-shadow: inset 0 0 4px 4px rgba(0, 0, 0, .4);
     z-index: 1;
   }
   .side_nav h1{
