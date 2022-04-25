@@ -1,11 +1,12 @@
 /* common */
 
 :root{
-  --monte-maincolor: rgb(209, 232, 202);
+  --monte-maincolor: rgb(218, 236, 213);
   --monte-subcolor: #f8d8d2;
   --monte-pointcolor: #e1a398;
   --monte-revaersecolor: rgb(107, 171, 65);
-  --monte-footercolor: rgb(177, 209, 161);
+  --monte-footercolor: rgb(183, 210, 170);
+  --monte-sidecolor: rgb(162, 156, 146);
   --side_width: 280px;
 }
 
@@ -75,6 +76,7 @@ p{
   max-width: 520px;
   margin: 8px auto;
   text-align: left;
+  font-feature-settings: "palt";
 }
 #to_top{
   position: fixed;
@@ -103,6 +105,24 @@ p{
 #to_top img{
   width: 40px;
   object-fit: contain;
+}
+
+/* カーニング */
+
+.left_bracket_24px{
+  margin-left: -10px;
+}
+.right_bracket_24px{
+  margin-right: -10px;
+}
+.left_bracket_16px{
+  margin-left: -6px;
+}
+.right_bracket_16px{
+  margin-right: -6px;
+}
+.punctuation{
+  margin-right: -6px;
 }
 
 /* header */
@@ -176,10 +196,7 @@ header nav{
   border-radius: 4px;
   text-align: center;
   cursor: pointer;
-  transition: all .5s;
-}
-.sp-nav ul li:hover{
-  background-color: var(--monte-revaersecolor);
+  /* transition: all .5s; */
 }
 .sp-nav ul li p{
   font-weight:500;
@@ -371,7 +388,7 @@ header nav{
   margin-top: 24px;
 }
 .contact > p{
-  margin: 16px;
+  margin: 16px auto;
 }
 .contact a{
   display: flex;
@@ -389,7 +406,7 @@ header nav{
   transition: all .5s;
 }
 .contact a:hover{
-  background-color: var(--monte-pointcolor);
+  /* background-color: var(--monte-pointcolor); */
   color: #fff;
 }
 .contact a img{
@@ -509,6 +526,10 @@ footer ul li::before{
   .plan table td{
     font-size: 13px;
   }
+  .contact a:hover{
+    background-color: var(--monte-pointcolor);
+    color: #fff;
+  }
 
   /* sp-nav */
 
@@ -539,7 +560,7 @@ footer ul li::before{
     height: 100%;
     width: var(--side_width);
     padding: 8px;
-    background-color: var(--monte-footercolor);
+    background-color: var(--monte-sidecolor);
     z-index: 1;
   }
   .side_nav h1{
@@ -547,6 +568,7 @@ footer ul li::before{
     font-family: 'Hachi Maru Pop', cursive;
     font-size: 14px;
     margin-top: 8px;
+    color: #eee;
   }
   .side_logo{
     display: block;
@@ -581,6 +603,7 @@ footer ul li::before{
     text-align: center;
     margin: 0 auto;
     display: block;
+    color: #eee;
   }
 }
 
@@ -599,5 +622,9 @@ footer ul li::before{
   .hero,
   .recruit_hero{
     height: 300px;
+  }
+  .hero{
+    /* ↓使用画像により調整 */
+    object-position: 0% 20%;
   }
 }
