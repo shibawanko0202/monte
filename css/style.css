@@ -78,12 +78,10 @@ p{
   text-align: left;
   font-feature-settings: "palt";
 }
-.marker{
+/* .marker{
   background:linear-gradient(transparent 65%, #ffad5692 65%);
-  /* font-weight: 600; */
   font-weight: bold;
-  /* font-size: 20px; */
-}
+} */
 #to_top{
   position: fixed;
   bottom: 85px;
