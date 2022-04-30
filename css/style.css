@@ -7,6 +7,7 @@
   --monte-revaersecolor: rgb(107, 171, 65);
   --monte-footercolor: rgb(164, 196, 148);
   --monte-sidecolor: rgb(145, 178, 137);
+  --monte-textcolor: rgb(72, 48, 48);
   /* --monte-sidecolor: rgb(110, 141, 102); */
   --side_width: 280px;
 }
@@ -22,7 +23,7 @@ body{
   height: 100%;
   background-color: var(--monte-maincolor);
   font-family: 'Kiwi Maru', serif;
-  color: rgb(72, 48, 48);
+  color: var(--monte-textcolor);
 }
 .main_area{
   width: 100%;
@@ -36,13 +37,6 @@ section{
 }
 section + section{
   margin: 80px 8px;
-}
-section a{
-  text-decoration: underline;
-  transition: color .5s;
-}
-section a:hover{
-  color: var(--monte-revaersecolor);
 }
 h2{
   font-size: 24px;
@@ -229,7 +223,7 @@ header nav{
   /* ↓使用画像により調整 */
   object-position: 0% 25%;
 }
-.strength > dl,
+.strength__list,
 .employee > dl{
   border-left: solid 8px var(--monte-subcolor);
   background: whitesmoke;
@@ -239,6 +233,18 @@ header nav{
   margin: 8px auto;
   text-align: left;
   box-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+}
+.strength__list:first-of-type{
+  margin-top: 32px;
+  /* background-color: #444; */
+}
+.price:last-of-type .marker{
+  background:linear-gradient(transparent 65%, #ffad5692 65%);
+  font-weight: bold;
+  transition: all .6s;
+}
+.price:last-of-type .marker:hover{
+  background:linear-gradient(transparent 65%, #4fdc6092 65%);
 }
 .employee > dl > dd > dl{
   margin: 8px 0;
@@ -261,23 +267,24 @@ header nav{
   margin: 8px;
 }
 .price{
-  position: relative;
-  background: var(--monte-subcolor);
-  box-shadow: 0px 0px 0px 5px var(--monte-subcolor);
-  /* border: dashed 2px white; */
-  padding: 0.2em 0.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px dashed rgb(229, 153, 83);
+  background-color: rgba(255, 255, 255, 0.598);
+  /* background: linear-gradient(var(--monte-maincolor), rgba(255, 255, 255, 0.598)); */
+  border-radius: 8px;
+  padding: 8px;
   margin: 8px;
-  color: #454545;
 }
-.price:after {
-  position: absolute;
-  content: '';
-  left: -7px;
-  top: -7px;
-  border-width: 0 0 15px 15px;
-  border-style: solid;
-  border-color: var(--monte-maincolor) var(--monte-maincolor) var(--monte-pointcolor);
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+.price strong{
+  display: block;
+  color: rgb(80, 141, 71);
+  font-size: 40px;
+  /* line-height: 60px; */
+  padding-top: 6px;
+  font-family: 'Libre Bodoni', serif;
 }
 .nursing ul li,
 .outline dl{
@@ -410,6 +417,13 @@ header nav{
 }
 .alliance dd + dt{
   margin-top: 24px;
+}
+.alliance a{
+  text-decoration: underline;
+  transition: color .5s;
+}
+.alliance a:hover{
+  color: var(--monte-revaersecolor);
 }
 .contact > p{
   margin: 16px auto;
