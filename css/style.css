@@ -264,7 +264,8 @@ header nav{
   width: 90%;
   max-width: 450px;
   object-fit: contain;
-  margin: 8px;
+  margin: 16px 0;
+  box-shadow: 0 0 0 8px #fff;
 }
 .price{
   display: flex;
@@ -298,7 +299,7 @@ header nav{
   box-shadow: 2px 2px 2px rgba(0,0,0,0.3);
 }
 .nursing ul li{
-  width: 180px;
+  width: 160px;
   border-radius: 7px 0 0 7px;
   margin: 8px auto;
 }
@@ -326,7 +327,15 @@ header nav{
   background-color: #fff;
   border: 1px solid #aaa;
 }
-.plan small,
+.plan small{
+  display: block;
+  margin: 0 auto;
+  text-align: left;
+  width: 420px;
+}
+.plan small::before{
+  content: "※ ";
+}
 .plan p{
   text-align: left;
 }
