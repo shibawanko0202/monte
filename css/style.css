@@ -331,7 +331,7 @@ header nav{
   display: block;
   margin: 0 auto;
   text-align: left;
-  width: 420px;
+  max-width: 420px;
 }
 .plan small::before{
   content: "※ ";
@@ -384,27 +384,28 @@ header nav{
   min-height: 80px;
   min-width: 12px;
 }
-.events ul li{
+.events div dl{
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.events ul li:nth-child(1){
+.events div dl:nth-child(1){
   color: rgb(225, 163, 7);
 }
-.events ul li:nth-child(2){
+.events div dl:nth-child(2){
   color: rgb(254, 149, 205);
 }
-.events ul li:nth-child(3){
+.events div dl:nth-child(3){
   color: rgb(94, 182, 240);
 }
-.events ul li:nth-child(4){
+.events div dl:nth-child(4){
   color: rgb(241, 87, 210);
 }
-.events ul li:nth-child(5){
+.events div dl:nth-child(5){
   color: rgb(253, 153, 31);
 }
-.events ul li:nth-child(6){
+.events div dl:nth-child(6){
   color: rgb(41, 118, 41);
 }
 .events dt{
@@ -420,6 +421,15 @@ header nav{
 .event{
   height: 100px;
   object-fit: contain;
+}
+.event-img{
+  position: absolute;
+  top: -30px;
+  left: 150px;
+  height: 200px;
+  object-fit: contain;
+  box-shadow: 0 0 0 8px #fff;
+  z-index: -1;
 }
 .alliance dt + dt{
   margin-bottom: 8px;
