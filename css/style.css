@@ -65,6 +65,12 @@ dd + dt{
 dd + dd{
   margin-top: 4px;
 }
+dd ul{
+  margin-left: 16px;
+}
+dd ul li{
+  list-style:square;
+}
 .illust{
   height: 160px;
   object-fit: contain;
