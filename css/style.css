@@ -72,9 +72,9 @@ dd ul li::before{
   content: "■";
   position: absolute;
   top: 0;
-  left: 0;
-  font-size: 14px;
-  line-height: 20px;
+  left: 3px;
+  font-size: 12px;
+  line-height: 18px;
 }
 dd ul li + li{
   margin-top: 4px;
@@ -495,7 +495,7 @@ header nav{
   height: 60px;
   width: 320px;
   background-color: var(--monte-revaersecolor);
-  box-shadow: 4px 4px 8px rgba(0, 0, 0, .3);
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
   margin: 12px auto;
   padding: 4px;
   border-radius: 8px;
@@ -504,7 +504,6 @@ header nav{
   transition: all .5s;
 }
 .contact a:hover{
-  /* background-color: var(--monte-pointcolor); */
   color: #fff;
 }
 .contact a img{
