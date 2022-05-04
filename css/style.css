@@ -289,7 +289,7 @@ header nav{
   margin-top: -49px;
   letter-spacing: 0;
   text-indent: 0;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 16px;
 }
 .price{
@@ -411,10 +411,10 @@ header nav{
   min-height: 80px;
   min-width: 12px;
 }
-.schedule div dl + dl{
+.schedule ol li + li{
   margin-top: 30px;
 }
-.schedule div dl dd p{
+.schedule ol li p{
   text-align: center;
   margin-top: -28px;
 }
@@ -495,7 +495,7 @@ header nav{
   height: 60px;
   width: 320px;
   background-color: var(--monte-revaersecolor);
-  box-shadow: 4px 4px 8px rgba(0, 0, 0, .6);
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, .3);
   margin: 12px auto;
   padding: 4px;
   border-radius: 8px;
@@ -625,6 +625,9 @@ footer ul li::before{
 
   /* main */
 
+  .outline_img + .outline-img-p{
+    font-size: 16px;
+  }
   .plan table th,
   .plan table td{
     font-size: 13px;
