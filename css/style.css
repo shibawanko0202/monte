@@ -8,7 +8,6 @@
   --monte-footercolor: rgb(164, 196, 148);
   --monte-sidecolor: rgb(145, 178, 137);
   --monte-textcolor: rgb(72, 48, 48);
-  /* --monte-sidecolor: rgb(110, 141, 102); */
   --side_width: 280px;
 }
 
@@ -65,11 +64,17 @@ dd + dt{
 dd + dd{
   margin-top: 4px;
 }
-dd ul{
-  margin-left: 20px;
-}
 dd ul li{
-  list-style:square;
+  position: relative;
+  padding-left: 1em;
+}
+dd ul li::before{
+  content: "■";
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 14px;
+  line-height: 20px;
 }
 dd ul li + li{
   margin-top: 4px;
@@ -267,12 +272,25 @@ header nav{
   line-height: 1.5em;
   letter-spacing: .07em;
 }
-.strength .outline_img{
+.outline_img{
   width: 90%;
   max-width: 450px;
   object-fit: contain;
-  margin: 16px;
+  margin: 24px 0;
   box-shadow: 0 0 0 8px #fff;
+  border-bottom: 30px solid #fff;
+}
+.outline_img + .outline-img-p{
+  width: calc(90% + 16px);
+  max-width: 450px;
+  background-color: #fff;
+  text-align: center;
+  padding: 6px;
+  margin-top: -49px;
+  letter-spacing: 0;
+  text-indent: 0;
+  font-size: 16px;
+  line-height: 16px;
 }
 .price{
   display: flex;
@@ -324,30 +342,41 @@ header nav{
   vertical-align: middle;
   padding: 4px 2px;
   line-break: normal;
-  font-size: 10px;
+  font-size: 11px;
 }
 .plan table th{
   background-color: var(--monte-subcolor);
   border: 1px solid #aaa;
 }
 .plan table td{
+  width: 50px;
   background-color: #fff;
   border: 1px solid #aaa;
 }
 .plan small{
+  position: relative;
   display: block;
+  padding-left: 2em;
   margin: 0 auto;
   text-align: left;
-  max-width: 420px;
+  max-width: 450px;
 }
 .plan small::before{
   content: "※ ";
+  position:absolute;
+	left:1em;
+	top:0;
 }
 .plan p{
+  position: relative;
+  padding-left: 1em;
   text-align: left;
 }
 .plan p::before{
   content: "●";
+  position:absolute;
+	left:0;
+	top:0;
 }
 .plan_other{
   border: dashed 2px var(--monte-pointcolor);
@@ -363,11 +392,16 @@ header nav{
   margin: 8px auto;
 }
 .plan_other li{
+  position: relative;
+  padding-left: 1em;
   font-size: 14px;
   text-align: left;
 }
 .plan_other li::before{
   content: "･";
+  position: absolute;
+  top: 0;
+  left: 4px;
 }
 .employee{
   margin: 0 8px 80px;
@@ -376,6 +410,20 @@ header nav{
   writing-mode: vertical-rl;
   min-height: 80px;
   min-width: 12px;
+}
+.schedule div dl + dl{
+  margin-top: 30px;
+}
+.schedule div dl dd p{
+  text-align: center;
+  margin-top: -28px;
+}
+.schedule-img{
+  width: 300px;
+  object-fit: contain;
+  box-shadow: 0 0 0 8px #fff;
+  border-bottom: 30px solid #fff;
+  margin: 8px;
 }
 .events div dl{
   position: relative;
@@ -580,6 +628,9 @@ footer ul li::before{
   .plan table th,
   .plan table td{
     font-size: 13px;
+  }
+  .plan table td{
+    width: 70px;
   }
   .contact a:hover{
     background-color: var(--monte-pointcolor);
