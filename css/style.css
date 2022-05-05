@@ -30,7 +30,6 @@ body{
   background-color: var(--monte-maincolor);
   font-family: 'Kiwi Maru', serif;
   color: var(--monte-textcolor);
-  overflow-x: hidden;
 }
 .main_area{
   width: 100%;
@@ -446,11 +445,15 @@ header nav{
 
 /* 年間行事予定(events) */
 
+.events__lists{
+  /* width: 100%; */
+  overflow: hidden;
+}
 .events__list{
   position: relative;
   width: 70%;
   max-width: 300px;
-  margin: 0 auto 70px;
+  margin: 45px auto 70px;
 }
 .events__month-div{
   position: absolute;
