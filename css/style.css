@@ -519,32 +519,33 @@ header nav{
   transform: rotate(45deg) translate(10px,10px);
 }
 .events__list:nth-child(1) .events__month,
-.events__list:nth-child(1) p{
+.events__list:nth-child(1) .events__title{
   color: rgb(225, 163, 7);
 }
 .events__list:nth-child(2) .events__month,
-.events__list:nth-child(2) p{
+.events__list:nth-child(2) .events__title{
   color: rgb(254, 149, 205);
 }
 .events__list:nth-child(3) .events__month,
-.events__list:nth-child(3) p{
+.events__list:nth-child(3) .events__title{
   color: rgb(94, 182, 240);
 }
 .events__list:nth-child(4) .events__month,
-.events__list:nth-child(4) p{
+.events__list:nth-child(4) .events__title{
   color: rgb(241, 87, 210);
 }
 .events__list:nth-child(5) .events__month,
-.events__list:nth-child(5) p{
+.events__list:nth-child(5) .events__title{
   color: rgb(253, 153, 31);
 }
 .events__list:nth-child(6) .events__month,
-.events__list:nth-child(6) p{
+.events__list:nth-child(6) .events__title{
   color: rgb(41, 118, 41);
 }
-.events p{
+.events__title{
   text-align: center;
   font-size: 16px;
+  padding-right: 45px;
   margin-top: -20px;
 }
 
