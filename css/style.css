@@ -436,7 +436,7 @@ header nav{
   margin-top: -28px;
 }
 .schedule-img{
-  width: 200px;
+  width: 250px;
   object-fit: contain;
   box-shadow: 0 0 0 8px #fff;
   border-bottom: 30px solid #fff;
@@ -457,8 +457,8 @@ header nav{
 }
 .events__month-div{
   position: absolute;
-  bottom: -32px;
-  right: -46px;
+  bottom: -26px;
+  right: -26px;
   display: block;
   justify-content: center;
   align-items: center;
@@ -467,14 +467,14 @@ header nav{
   border-radius: 50%;
   background-color: var(--monte-maincolor);
   border-top: 1px solid rgba(0,0,0,0.3);
-  transform: rotate(-45deg);
+  transform: rotate(-52deg);
 }
 .events__month{
   position: absolute;
   top: 8px;
   left: 20px;
   font-family: 'Leckerli One', cursive;
-  transform: rotate(45deg);
+  transform: rotate(52deg);
 }
 .events__list:nth-child(5) .events__month{
   position: absolute;
@@ -514,12 +514,24 @@ header nav{
   border-radius: 50%;
   background-color: var(--monte-maincolor);
   border-bottom: 1px solid rgba(0,0,0,0.3);
-  transform: rotate(-45deg);
+  transform: rotate(-42deg);
 }
 .events__illust{
   width: 80px;
   object-fit: contain;
-  transform: rotate(45deg) translate(10px,10px);
+  transform: rotate(42deg) translate(10px,10px);
+}
+.events__title{
+  text-align: center;
+  font-size: 16px;
+  padding-right: 45px;
+  margin-top: -20px;
+}
+.events__list:nth-child(3) .events__title,
+.events__list:nth-child(5) .events__title{
+  padding-right: 60px;
+  font-size: 14px;
+  margin-top: -19px;
 }
 .events__list:nth-child(1) .events__month,
 .events__list:nth-child(1) .events__title{
@@ -545,12 +557,7 @@ header nav{
 .events__list:nth-child(6) .events__title{
   color: rgb(41, 118, 41);
 }
-.events__title{
-  text-align: center;
-  font-size: 16px;
-  padding-right: 45px;
-  margin-top: -20px;
-}
+
 
 /* 提携医療機関(alliance) */
 
