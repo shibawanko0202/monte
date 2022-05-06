@@ -8,6 +8,7 @@
   --monte-footercolor: rgb(164, 196, 148);
   --monte-sidecolor: rgb(145, 178, 137);
   --monte-textcolor: rgb(72, 48, 48);
+  --monte-white: rgb(251, 255, 251);
   --side_width: 280px;
 }
 
@@ -282,13 +283,13 @@ header nav{
   max-width: 450px;
   object-fit: contain;
   margin: 24px 0;
-  box-shadow: 0 0 0 8px #fff;
-  border-bottom: 30px solid #fff;
+  box-shadow: 0 0 0 8px var(--monte-white);
+  border-bottom: 30px solid var(--monte-white);
 }
 .outline_img + .outline-img-p{
   width: calc(90% + 16px);
   max-width: 450px;
-  background-color: #fff;
+  background-color: var(--monte-white);
   text-align: center;
   padding: 6px;
   margin-top: -49px;
@@ -438,38 +439,33 @@ header nav{
 .schedule-img{
   width: 250px;
   object-fit: contain;
-  box-shadow: 0 0 0 8px #fff;
-  border-bottom: 30px solid #fff;
+  box-shadow: 0 0 0 8px var(--monte-white);
+  border-bottom: 30px solid var(--monte-white);
   margin: 8px;
 }
 
 /* 年間行事予定(events) */
 
 .events__lists{
-  /* width: 100%; */
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 .events__list{
   position: relative;
   width: 70%;
   max-width: 300px;
-  margin: 45px auto 70px;
+  margin: 20px auto 50px;
 }
 .events__month-div{
   position: absolute;
   bottom: -26px;
   left: -26px;
-  /* bottom: -26px;
-  right: -26px; */
   display: block;
   justify-content: center;
   align-items: center;
   width: 115px;
   height: 115px;
   border-radius: 50%;
-  background-color: var(--monte-maincolor);
-  /* border-top: 1px solid rgba(0,0,0,0.3); */
-  transform: rotate(-52deg);
+  background-color: var(--monte-white);
 }
 .events__month{
   position: absolute;
@@ -478,7 +474,6 @@ header nav{
   font-size: 24px;
   font-family: 'Zen Maru Gothic', sans-serif;
   white-space: nowrap;
-  transform: rotate(52deg);
 }
 .events__list:nth-child(4) .events__month{
   top: 12px;
@@ -501,11 +496,16 @@ header nav{
 .events__list:nth-child(6) .events__month span{
   font-size: 65px;
 }
+.events__img-div{
+  border-radius: 8px;
+  box-shadow: 0 0 0 8px var(--monte-white);
+  border-bottom: 30px solid var(--monte-white);
+}
 .events__img{
   width: 100%;
   object-fit: cover;
-  box-shadow: 0 0 0 8px #fff;
-  border-bottom: 30px solid #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 0 8px var(--monte-white);
 }
 .events__illust-div{
   position: absolute;
@@ -517,14 +517,12 @@ header nav{
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  background-color: var(--monte-maincolor);
-  /* border-bottom: 1px solid rgba(0,0,0,0.3); */
-  transform: rotate(-42deg);
+  background-color: var(--monte-white);
 }
 .events__illust{
   width: 60px;
   object-fit: contain;
-  transform: rotate(42deg) translate(8px,8px);
+  margin: 10px;
 }
 .events__title{
   text-align: center;
