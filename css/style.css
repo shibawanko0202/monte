@@ -458,43 +458,48 @@ header nav{
 .events__month-div{
   position: absolute;
   bottom: -26px;
-  right: -26px;
+  left: -26px;
+  /* bottom: -26px;
+  right: -26px; */
   display: block;
   justify-content: center;
   align-items: center;
-  width: 100px;
-  height: 100px;
+  width: 115px;
+  height: 115px;
   border-radius: 50%;
   background-color: var(--monte-maincolor);
-  border-top: 1px solid rgba(0,0,0,0.3);
+  /* border-top: 1px solid rgba(0,0,0,0.3); */
   transform: rotate(-52deg);
 }
 .events__month{
   position: absolute;
-  top: 8px;
+  top: 10px;
   left: 20px;
-  font-family: 'Leckerli One', cursive;
+  font-size: 24px;
+  font-family: 'Zen Maru Gothic', sans-serif;
+  white-space: nowrap;
   transform: rotate(52deg);
 }
+.events__list:nth-child(4) .events__month{
+  top: 12px;
+  left: 22px;
+}
 .events__list:nth-child(5) .events__month{
-  position: absolute;
-  top: 16px;
-  left: 16px;
-  white-space: nowrap;
+  top: 22px;
+  left: 14px;
 }
 .events__list:nth-child(6) .events__month{
-  position: absolute;
   top: 20px;
-  left: 14px;
-  white-space: nowrap;
+  left: 10px;
 }
 .events__month span{
-  font-size: 70px;
+  font-size: 80px;
   font-weight: normal;
+  font-family: 'Leckerli One', cursive;
 }
 .events__list:nth-child(5) .events__month span,
 .events__list:nth-child(6) .events__month span{
-  font-size: 55px;
+  font-size: 65px;
 }
 .events__img{
   width: 100%;
@@ -504,32 +509,32 @@ header nav{
 }
 .events__illust-div{
   position: absolute;
-  top: -40px;
-  left: -40px;
+  top: -25px;
+  right: -25px;
   display: block;
   justify-content: center;
   align-items: center;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   background-color: var(--monte-maincolor);
-  border-bottom: 1px solid rgba(0,0,0,0.3);
+  /* border-bottom: 1px solid rgba(0,0,0,0.3); */
   transform: rotate(-42deg);
 }
 .events__illust{
-  width: 80px;
+  width: 60px;
   object-fit: contain;
-  transform: rotate(42deg) translate(10px,10px);
+  transform: rotate(42deg) translate(8px,8px);
 }
 .events__title{
   text-align: center;
   font-size: 16px;
-  padding-right: 45px;
+  padding-left: 65px;
   margin-top: -20px;
 }
 .events__list:nth-child(3) .events__title,
 .events__list:nth-child(5) .events__title{
-  padding-right: 60px;
+  padding-left: 80px;
   font-size: 14px;
   margin-top: -19px;
 }
