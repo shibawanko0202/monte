@@ -1,7 +1,7 @@
 /* common */
 
 :root{
-  --monte-maincolor: rgb(218, 236, 213);
+  --monte-maincolor: rgb(225, 244, 222);
   --monte-subcolor: #f8d8d2;
   --monte-pointcolor: #e1a398;
   --monte-revaersecolor: rgb(107, 171, 65);
@@ -20,14 +20,14 @@
 }
 
 html{
-  height: 100%;
+  /* height: 100%; */
   scroll-behavior: smooth;
 }
 body{
   position: relative;
   display: flex;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-color: var(--monte-maincolor);
   font-family: 'Kiwi Maru', serif;
   color: var(--monte-textcolor);
@@ -259,7 +259,7 @@ header nav{
   padding: 0.5em;
   margin: 8px auto;
   text-align: left;
-  box-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
 }
 .strength__list:first-of-type{
   margin-top: 32px;
@@ -273,7 +273,7 @@ header nav{
 .price:last-of-type .marker:hover{
   background:linear-gradient(transparent 65%, #4fdc6092 65%);
 }
-.strength p{
+.strength__p{
   text-indent: 1em;
   line-height: 1.5em;
   letter-spacing: .07em;
@@ -283,16 +283,19 @@ header nav{
   max-width: 450px;
   object-fit: contain;
   margin: 24px 0;
-  box-shadow: 0 0 0 8px var(--monte-white);
-  border-bottom: 30px solid var(--monte-white);
+  /* box-shadow: 0 0 0 8px var(--monte-white); */
+  border: 8px solid var(--monte-white);
+  border-bottom: 38px solid var(--monte-white);
+  border-radius: 3px;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
 }
-.outline_img + .outline-img-p{
+.outline-img-p{
   width: calc(90% + 16px);
   max-width: 450px;
-  background-color: var(--monte-white);
+  /* background-color: var(--monte-white); */
   text-align: center;
   padding: 6px;
-  margin-top: -49px;
+  margin-top: -58px;
   letter-spacing: 0;
   text-indent: 0;
   font-size: 12px;
@@ -304,7 +307,7 @@ header nav{
   justify-content: center;
   align-items: center;
   border: 1px dashed rgb(229, 153, 83);
-  background-color: rgba(255, 255, 255, 0.598);
+  background-color: rgba(255, 255, 255, 0.767);
   /* background: linear-gradient(var(--monte-maincolor), rgba(255, 255, 255, 0.598)); */
   border-radius: 8px;
   padding: 8px;
@@ -318,6 +321,10 @@ header nav{
   padding-top: 6px;
   font-family: 'Libre Bodoni', serif;
 }
+.price strong span{
+  font-size: 28px;
+  margin-right: 4px;
+}
 .nursing ul li,
 .outline dl{
   border-right: solid 8px var(--monte-subcolor);
@@ -327,7 +334,7 @@ header nav{
   padding: 0.5em;
   margin: 8px auto;
   text-align: right;
-  box-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
 }
 
 /* 介護サービス */
@@ -365,7 +372,7 @@ header nav{
 }
 .plan table td{
   width: 50px;
-  background-color: #fff;
+  background-color: var(--monte-white);
   border: 1px solid #aaa;
 }
 .plan small{
@@ -434,21 +441,20 @@ header nav{
 }
 .schedule ol li p{
   text-align: center;
-  margin-top: -28px;
+  margin-top: -36px;
 }
 .schedule-img{
   width: 250px;
   object-fit: contain;
-  box-shadow: 0 0 0 8px var(--monte-white);
-  border-bottom: 30px solid var(--monte-white);
+  border: 8px solid var(--monte-white);
+  border-bottom: 38px solid var(--monte-white);
+  border-radius: 3px;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
   margin: 8px;
 }
 
 /* 年間行事予定(events) */
 
-.events__lists{
-  /* overflow: hidden; */
-}
 .events__list{
   position: relative;
   width: 70%;
@@ -481,11 +487,11 @@ header nav{
 }
 .events__list:nth-child(5) .events__month{
   top: 22px;
-  left: 14px;
+  left: 16px;
 }
 .events__list:nth-child(6) .events__month{
-  top: 20px;
-  left: 10px;
+  top: 22px;
+  left: 12px;
 }
 .events__month span{
   font-size: 80px;
@@ -494,23 +500,24 @@ header nav{
 }
 .events__list:nth-child(5) .events__month span,
 .events__list:nth-child(6) .events__month span{
-  font-size: 65px;
+  font-size: 60px;
 }
 .events__img-div{
-  border-radius: 8px;
-  box-shadow: 0 0 0 8px var(--monte-white);
-  border-bottom: 30px solid var(--monte-white);
+  border-radius: 30px;
+  border: 8px solid var(--monte-white);
+  border-bottom: 42px solid var(--monte-white);
 }
 .events__img{
   width: 100%;
   object-fit: cover;
-  border-radius: 8px;
+  border-radius: 22px;
   box-shadow: 0 0 0 8px var(--monte-white);
+
 }
 .events__illust-div{
   position: absolute;
-  top: -25px;
-  right: -25px;
+  top: -15px;
+  right: -15px;
   display: block;
   justify-content: center;
   align-items: center;
@@ -528,13 +535,13 @@ header nav{
   text-align: center;
   font-size: 16px;
   padding-left: 65px;
-  margin-top: -20px;
+  margin-top: -30px;
 }
 .events__list:nth-child(3) .events__title,
 .events__list:nth-child(5) .events__title{
   padding-left: 80px;
   font-size: 14px;
-  margin-top: -19px;
+  margin-top: -29px;
 }
 .events__list:nth-child(1) .events__month,
 .events__list:nth-child(1) .events__title{
@@ -788,7 +795,7 @@ footer ul li::before{
     background: whitesmoke;
     border-radius: 5px 0 0 5px;
     padding: 0.5em;
-    box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.3);
     margin: 8px;
     text-align: center;
     cursor: pointer;
