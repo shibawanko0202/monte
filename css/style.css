@@ -413,7 +413,7 @@ header nav{
   margin: 16px auto;
 }
 .plan_other h3{
-  font-size: 16px;
+  font-size: 18px;
   width: 100%;
   margin: 8px auto;
 }
@@ -633,6 +633,59 @@ header nav{
 .contact dt{
   font-weight: normal;
 }
+.contact__reception-time{
+  font-size: 12px;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  padding: 3px;
+  margin-left: 12px;
+}
+.contact__faq-box{
+  border: dashed 2px var(--monte-pointcolor);
+  background: rgba(255,255,255,.5);
+  border-radius: 8px;
+  max-width: 400px;
+  padding:16px;
+  margin: 24px auto;
+}
+.contact__faq-box h3{
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+.contact__faq dt{
+  text-decoration: underline var(--monte-pointcolor);
+}
+.contact__faq dt::before{
+  content: "Q";
+  position: absolute;
+  top: -13px;
+  left: -12px;
+  font-size: 24px;
+  color: var(--monte-pointcolor);
+  margin: 4px;
+}
+.contact__faq dd::before{
+  content: "A";
+  position: absolute;
+  top: -11px;
+  left: -12px;
+  font-size: 24px;
+  color: var(--monte-revaersecolor);
+  margin: 4px;
+}
+.contact__faq dt,
+.contact__faq dd{
+  position: relative;
+  padding-left: 1em;
+  margin: 6px;
+  text-align: left;
+}
+.contact__faq dd + dt{
+  margin-top: 16px;
+}
+
+/* アクセス(access) */
+
 .access address{
   margin: 8px;
 }
@@ -640,9 +693,6 @@ header nav{
 .access dd{
   text-align: center;
 }
-
-/* アクセス(access) */
-
 .access dt::before{
   content: "■";
 }
