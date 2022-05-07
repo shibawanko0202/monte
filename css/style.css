@@ -653,12 +653,13 @@ header nav{
   margin-bottom: 8px;
 }
 .contact__faq dt{
-  text-decoration: underline var(--monte-pointcolor);
+  text-decoration: underline;
+  text-decoration-color: var(--monte-pointcolor);
 }
 .contact__faq dt::before{
   content: "Q";
   position: absolute;
-  top: -13px;
+  top: -9px;
   left: -12px;
   font-size: 24px;
   color: var(--monte-pointcolor);
@@ -667,7 +668,7 @@ header nav{
 .contact__faq dd::before{
   content: "A";
   position: absolute;
-  top: -11px;
+  top: -7px;
   left: -12px;
   font-size: 24px;
   color: var(--monte-revaersecolor);
@@ -679,9 +680,11 @@ header nav{
   padding-left: 1em;
   margin: 6px;
   text-align: left;
+  letter-spacing: .04em;
+  line-height: 1.3em;
 }
 .contact__faq dd + dt{
-  margin-top: 16px;
+  margin-top: 20px;
 }
 
 /* アクセス(access) */
