@@ -535,12 +535,16 @@ header nav{
 .events__title{
   text-align: center;
   font-size: 16px;
-  padding-left: 65px;
+  padding-left: 55px;
   margin-top: -30px;
 }
-.events__list:nth-child(3) .events__title,
+.events__list:nth-child(3) .events__title{
+  padding-left: 60px;
+  font-size: 14px;
+  margin-top: -29px;
+}
 .events__list:nth-child(5) .events__title{
-  padding-left: 80px;
+  padding-left: 75px;
   font-size: 14px;
   margin-top: -29px;
 }
