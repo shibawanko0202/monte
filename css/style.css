@@ -27,7 +27,6 @@
     position: relative;
     display: flex;
     width: 100%;
-    height: 100vh;
     background-color: var(--monte-maincolor);
     font-family: 'Kiwi Maru', serif;
     color: var(--monte-textcolor);
@@ -106,16 +105,16 @@
 
 /* カーニング(フォントを変更した際は注意) */
 
-  .left_bracket_24px{
+  .left-bracket-24px{
     margin-left: -10px;
   }
-  .right_bracket_24px{
+  .right-bracket-24px{
     margin-right: -10px;
   }
-  .left_bracket_16px{
+  .left-bracket-16px{
     margin-left: -6px;
   }
-  .right_bracket_16px{
+  .right-bracket-16px{
     margin-right: -6px;
   }
   .punctuation{
@@ -174,16 +173,23 @@
     padding: 0 10px;
     display: flex;
   }
-  .bord{
+  .header__logo-img{
+    width: 210px;
+    object-fit: contain;
+    margin: 12px 8px 0 8px;
+    filter: drop-shadow(0 0 4px rgba(0,0,0,.5));
+  }
+  .header__bord-div{
     position: relative;
+    width: 110px;
+    margin: 12px;
+  }
+  .header__bord{
     width: 110px;
     object-fit: contain;
     filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.3));
   }
-  div.bord{
-    margin: 12px;
-  }
-  header h1{
+  .header__h1{
     position: absolute;
     top: 33px;
     left: 15px;
@@ -191,24 +197,13 @@
     text-align: center;
     font-family: 'huiji-subset','Hachi Maru Pop', cursive;
   }
-  .recruit_h1{
-    top: 38px;
-    left: 15px;
-    font-size: 20px;
-  }
-  .logo{
-    width: 210px;
-    object-fit: contain;
-    margin: 12px 8px 0 8px;
-    filter: drop-shadow(0 0 4px rgba(0,0,0,.5));
-  }
-  header nav{
+  .header__nav{
     display: none;
   }
 
 /* header */
 
-/* スマホ用ナビ(sp-nav) */
+/* スマホ用ナビ(.sp-nav) */
 
   .sp-nav{
     position: fixed;
@@ -224,7 +219,7 @@
     align-items: center;
     height: 100%;
   }
-  .sp-nav ul li{
+  .sp-nav__list{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -239,11 +234,11 @@
     cursor: pointer;
     /* transition: all .5s; */
   }
-  .sp-nav ul li p{
+  .sp-nav__list p{
     font-weight:500;
     margin: 0;
   }
-  .sp-nav ul li img{
+  .sp-nav__list img{
     width: 30px;
     margin: 2px 4px;
     object-fit: contain
@@ -260,13 +255,7 @@
     /* ↓使用画像により調整 */
     object-position: 0% 10%;
   }
-  .recruit-hero{
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
-    /* ↓使用画像により調整 */
-    object-position: 0% 25%;
-  }
+
 /* TOP画 */
 
 /* もんてくらいについて(.strength) */
@@ -380,6 +369,7 @@
     font-size: 12px;
     line-height: 16px;
   }
+
 /* 施設概要(.outline) */
 
 /* 料金プラン詳細(.plan) */
@@ -637,24 +627,6 @@
 
 /* 提携医療機関(.alliance) */
 
-/* 正社員･パート勤務(採用情報ページ)(.employee) */
-
-  .employee{
-    margin: 0 8px 80px;
-  }
-  .employee__list{
-    border-left: solid 8px var(--monte-subcolor);
-    background: whitesmoke;
-    border-radius: 0 12px 12px 0;
-    max-width: 460px;
-    padding: 0.5em;
-    margin: 8px auto;
-    text-align: left;
-    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
-  }
-
-/* 正社員･パート勤務(採用情報ページ)(.employee) */
-
 /* お問い合わせ(.contact) */
 
   .contact > p{
@@ -764,19 +736,6 @@
 
 /* アクセス(.access) */
 
-/* 処遇改善加算について(.dodument) */
-
-  .document a{
-    text-decoration: underline;
-    color: #eb8284;
-    transition: color .3s;
-  }
-  .document a:hover{
-    color: var(--monte-revaersecolor);
-  }
-
-/* 処遇改善加算について(.dodument) */
-
 /* footer */
 
   footer{
@@ -824,6 +783,69 @@
 /* footer */
 
 
+/* 採用情報ページ */
+
+  /* header */
+
+    .header__recruit-h1{
+      position: absolute;
+      top: 38px;
+      left: 15px;
+      font-size: 20px;
+      color: #fff;
+      text-align: center;
+      font-family: 'huiji-subset','Hachi Maru Pop', cursive;
+    }
+
+  /* header */
+
+  /* TOP画 */
+
+    .recruit-hero{
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      /* ↓使用画像により調整 */
+      object-position: 0% 25%;
+    }
+
+  /* TOP画 */
+
+  /* 正社員･パート勤務(.employee) */
+
+    .employee{
+      margin: 0 8px 80px;
+    }
+    .employee__list{
+      border-left: solid 8px var(--monte-subcolor);
+      background: whitesmoke;
+      border-radius: 0 12px 12px 0;
+      max-width: 460px;
+      padding: 0.5em;
+      margin: 8px auto;
+      text-align: left;
+      box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    }
+
+  /* 正社員･パート勤務(.employee) */
+
+  /* 処遇改善加算について(.document) */
+
+    .document a{
+      text-decoration: underline;
+      color: #ea494987;
+      transition: color .3s;
+    }
+    .document a:hover{
+      color: var(--monte-revaersecolor);
+    }
+
+  /* 処遇改善加算について(.document) */
+
+/* 採用情報ページ */
+
+
+
 /* pc/tablet */
 
 @media(min-width:520px){
@@ -848,13 +870,13 @@
 
   /* header */
 
-    header nav{
+    .header__nav{
       display: block;
     }
-    header nav ul{
+    .header__nav ul{
       display: flex;
     }
-    header nav ul li{
+    .header__nav-list{
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -871,7 +893,7 @@
       cursor: pointer;
       transition: all .5s;
     }
-    header nav ul li:hover{
+    .header__nav-list:hover{
       border-left: solid 8px var(--monte-revaersecolor);
     }
 
