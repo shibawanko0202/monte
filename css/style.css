@@ -195,7 +195,7 @@
     left: 15px;
     color: #fff;
     text-align: center;
-    font-family: 'huiji-subset','Hachi Maru Pop', cursive;
+    font-family: 'huiji-subset', cursive;
   }
   .header__nav{
     display: none;
@@ -794,7 +794,7 @@
       font-size: 20px;
       color: #fff;
       text-align: center;
-      font-family: 'huiji-subset','Hachi Maru Pop', cursive;
+      font-family: 'huiji-subset', cursive;
     }
 
   /* header */
@@ -1000,7 +1000,7 @@
     }
     .side-nav h1{
       text-align: center;
-      font-family: 'huiji-subset','Hachi Maru Pop', cursive;
+      font-family: 'huiji-subset', cursive;
       font-size: 14px;
       margin-top: 8px;
       color: #fff;
