@@ -95,10 +95,12 @@
     height: 160px;
     object-fit: contain;
     margin: 8px;
+    backface-visibility: hidden;
   }
   .illust_top{
     height: 110px;
     object-fit: contain;
+    backface-visibility: hidden;
   }
 
 /* 看護系イラスト */
