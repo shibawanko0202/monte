@@ -15,13 +15,13 @@
 
   @font-face{ 
     font-family: 'huiji-subset';
-    src: url('../font/ふい字\(サブセット\).ttf') format('truetype');
+    src: url('../fonts/ふい字\(サブセット\).ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
   }
   @font-face{ 
     font-family: 'kiwimaru-subset';
-    src: url('../font/KiwiMaru\(サブセット\).ttf') format('truetype');
+    src: url('../fonts/KiwiMaru-light\(サブセット\).ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
   }
@@ -35,7 +35,6 @@
     width: 100%;
     background-color: var(--monte-maincolor);
     font-family: 'kiwimaru-subset', serif;
-    /* font-family: 'Kiwi Maru', serif; */
     color: var(--monte-textcolor);
   }
   section{
@@ -104,10 +103,16 @@
     margin: 8px;
     backface-visibility: hidden;
   }
-  .illust_top{
+  .illust-top{
     height: 110px;
     object-fit: contain;
     backface-visibility: hidden;
+  }
+  .illust-motivation{
+    height: 110px;
+    object-fit: contain;
+    backface-visibility: hidden;
+
   }
 
 /* 看護系イラスト */
@@ -292,11 +297,20 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 50px 0;
+  }
+  .strength__price-zero,
+  .strength__price-month{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
     border: 1px dashed rgb(229, 153, 83);
     background-color: rgba(255, 255, 255, 0.767);
     border-radius: 8px;
-    padding: 8px;
-    margin: 8px;
+    padding: 8px 16px;
+    margin: 6px;
   }
   .strength__price strong{
     display: block;
@@ -309,12 +323,15 @@
     font-size: 28px;
     margin-right: 4px;
   }
-  .strength__price:last-of-type .marker{
+  .strength__price-month .marker{
     position: relative;
     background:linear-gradient(transparent 65%, #f9939392 65%);
     font-weight: bold;
     z-index: 0;
     transition: .3s;
+  }
+  .strength__motivation{
+    font-size: 24px;
   }
   .strength__img{
     width: 90%;
@@ -911,7 +928,18 @@
   /* main */
   /* もんてくらいについて(.strength) */
 
-    .strength__price:last-of-type .marker::after{
+    .strength__price{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .strength__price-zero,
+    .strength__price-month{
+      height: 150px;
+    }
+    .strength__price-month .marker::after{
       content: "";
       display: block;
       position: absolute;
@@ -924,7 +952,7 @@
       opacity: 0;
       transition: .3s;
     }
-    .strength__price:last-of-type .marker:hover::after{
+    .strength__price-month .marker:hover::after{
       opacity: .5;
     }
     .strength__img-p{
