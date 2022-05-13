@@ -117,7 +117,7 @@
 
 /* 看護系イラスト */
 
-/* カーニング(フォントを変更した際は注意) */
+/* カーニング(jsで自動変換、フォントを変更した際は注意) */
 
   .left-bracket-24px{
     margin-left: -10px;
@@ -135,7 +135,7 @@
     margin-right: -6px;
   }
 
-/* カーニング(フォントを変更した際は注意) */
+/* カーニング(jsで自動変換、フォントを変更した際は注意) */
 
 /* TOPへ戻るボタン */
 
@@ -246,7 +246,6 @@
     border-radius: 4px;
     text-align: center;
     cursor: pointer;
-    /* transition: all .5s; */
   }
   .sp-nav__list p{
     font-weight:500;
